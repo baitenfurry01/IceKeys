@@ -1,0 +1,37 @@
+// !$*UTF8*$!
+{ archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+000000000000000000000064 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+0000000000000000000000C8 = { isa = PBXBuildFile; fileRef = 000000000000000000000064; };
+000000000000000000000065 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardListener.swift; sourceTree = "<group>"; };
+0000000000000000000000C9 = { isa = PBXBuildFile; fileRef = 000000000000000000000065; };
+000000000000000000000066 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+0000000000000000000000CA = { isa = PBXBuildFile; fileRef = 000000000000000000000066; };
+000000000000000000000067 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+0000000000000000000000CB = { isa = PBXBuildFile; fileRef = 000000000000000000000067; };
+000000000000000000000068 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceKeysApp.swift; sourceTree = "<group>"; };
+0000000000000000000000CC = { isa = PBXBuildFile; fileRef = 000000000000000000000068; };
+000000000000000000000078 = { isa = PBXFileReference; lastKnownFileType = file; path = ice.wav; sourceTree = "<group>"; };
+0000000000000000000000DC = { isa = PBXBuildFile; fileRef = 000000000000000000000078; };
+000000000000000000000079 = { isa = PBXFileReference; lastKnownFileType = file; path = AppIcon.icns; sourceTree = "<group>"; };
+0000000000000000000000DD = { isa = PBXBuildFile; fileRef = 000000000000000000000079; };
+00000000000000000000007A = { isa = PBXFileReference; lastKnownFileType = file; path = AppIcon.png; sourceTree = "<group>"; };
+0000000000000000000000DE = { isa = PBXBuildFile; fileRef = 00000000000000000000007A; };
+00000000000000000000007B = { isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+0000000000000000000000DF = { isa = PBXBuildFile; fileRef = 00000000000000000000007B; };
+000000000000000000000001 = { isa = PBXProject; attributes = { LastUpgradeCheck = 2700; }; buildConfigurationList = 000000000000000000000032; compatibilityVersion = "Xcode 14.0"; developmentRegion = zh_CN; knownRegions = (zh_CN, en, Base); mainGroup = 000000000000000000000002; productRefGroup = 000000000000000000000005; projectDirPath = ""; projectRoot = ""; targets = (00000000000000000000000A,); };
+000000000000000000000002 = { isa = PBXGroup; children = (000000000000000000000003, 000000000000000000000004, 000000000000000000000005,); sourceTree = "<group>"; };
+000000000000000000000003 = { isa = PBXGroup; children = (000000000000000000000064, 000000000000000000000065, 000000000000000000000066, 000000000000000000000067, 000000000000000000000068,); path = Sources; sourceTree = "<group>"; };
+000000000000000000000004 = { isa = PBXGroup; children = (000000000000000000000078, 000000000000000000000079, 00000000000000000000007A, 00000000000000000000007B,); path = Resources; sourceTree = "<group>"; };
+000000000000000000000005 = { isa = PBXGroup; children = (000000000000000000000006,); name = Products; sourceTree = "<group>"; };
+000000000000000000000006 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = IceKeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+00000000000000000000000A = { isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000033; buildPhases = (000000000000000000000014, 000000000000000000000015, 000000000000000000000016,); buildRules = (); dependencies = (); name = IceKeys; productName = IceKeys; productReference = 000000000000000000000006; productType = "com.apple.product-type.application"; };
+000000000000000000000014 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (0000000000000000000000C8, 0000000000000000000000C9, 0000000000000000000000CA, 0000000000000000000000CB, 0000000000000000000000CC,); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000015 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000016 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (0000000000000000000000DC, 0000000000000000000000DD, 0000000000000000000000DE, 0000000000000000000000DF,); runOnlyForDeploymentPostprocessing = 0; };
+00000000000000000000001E = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+00000000000000000000001F = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; }; name = Release; };
+000000000000000000000020 = { isa = XCBuildConfiguration; buildSettings = { CODE_SIGN_ENTITLEMENTS = IceKeys.entitlements; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; ENABLE_APP_SANDBOX = YES; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Info.plist; PRODUCT_BUNDLE_IDENTIFIER = com.icekeys.mac; PRODUCT_NAME = IceKeys; SWIFT_EMIT_LOC_STRINGS = YES; COMBINE_HIDPI_IMAGES = YES; }; name = Debug; };
+000000000000000000000021 = { isa = XCBuildConfiguration; buildSettings = { CODE_SIGN_ENTITLEMENTS = IceKeys.entitlements; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; ENABLE_APP_SANDBOX = YES; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Info.plist; PRODUCT_BUNDLE_IDENTIFIER = com.icekeys.mac; PRODUCT_NAME = IceKeys; SWIFT_EMIT_LOC_STRINGS = YES; COMBINE_HIDPI_IMAGES = YES; }; name = Release; };
+000000000000000000000032 = { isa = XCConfigurationList; buildConfigurations = (00000000000000000000001E, 00000000000000000000001F,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+000000000000000000000033 = { isa = XCConfigurationList; buildConfigurations = (000000000000000000000020, 000000000000000000000021,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+}; rootObject = 000000000000000000000001; }
